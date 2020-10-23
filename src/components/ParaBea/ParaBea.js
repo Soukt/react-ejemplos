@@ -5,7 +5,7 @@ function ParaBea() {
 
   return (
     <div>
-      {preguntas[numPregunta].pregunta}
+      {preguntas.nombreAutor[numPregunta].pregunta}
       <h1>vamos por la pregunta {numPregunta}</h1>
       <button onClick={() => setNumPregunta(numPregunta + 1)}>zapato</button>
 
