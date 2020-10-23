@@ -4,6 +4,7 @@ import "./App.css";
 import firebaseConfig from "./firebaseConfig";
 import { FirebaseAppProvider } from "reactfire";
 import Second from "./components/Second/Second";
+import ParaBea from "./components/ParaBea/ParaBea";
 import { ContextProvider } from "./ContextClass";
 function App() {
   const [contexto, setContexto] = useState("no estas loggeado");
@@ -16,6 +17,8 @@ function App() {
           <ContextProvider value={{ nombre: contexto, metodo: setContexto }}>
             <Main />
             <Second />
+            <h1>------------------------------</h1>
+            <ParaBea />
           </ContextProvider>
         </Suspense>
       </FirebaseAppProvider>
